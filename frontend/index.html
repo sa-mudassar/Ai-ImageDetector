@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Image Detector</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>AI Image Detector</h1>
+    <p class="sub">Upload a photo to check whether it looks AI-generated.</p>
+
+    <!-- IDs below are used by script.js. If you use your own design, keep these IDs. -->
+    <input type="file" id="imageInput" accept="image/*" />
+    <img id="preview" alt="Preview" />
+    <button id="analyzeBtn" disabled>Analyze image</button>
+
+    <p id="status"></p>
+    <div id="result"></div>
+
+    <p class="note">Results are probabilities, not proof. No detector is 100% accurate.</p>
+  </main>
+
+  <!-- config.js must load BEFORE script.js -->
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
